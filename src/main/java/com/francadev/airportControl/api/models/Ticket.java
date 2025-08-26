@@ -1,10 +1,13 @@
 package com.francadev.airportControl.api.models;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class Ticket {
 
-    private Long IdTicket;
+    private Long ticketId;
     private Flight flight;
     private FlightClass flightClass;
     private Integer seatNumber;
